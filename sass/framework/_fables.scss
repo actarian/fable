@@ -1,0 +1,111 @@
+@mixin nable($max) {
+    $i: 1;
+    @while $i <=$max {
+        .cols-#{$i} & {
+            width: 100% / $i;
+        }
+        $i: $i+1;
+    }
+}
+
+$font-size: 12px;
+$cell-padding: 4px;
+.nable {
+    display: block;
+    font-size: $font-size;
+    thead,
+    tbody,
+    tfoot,
+    tr,
+    th,
+    td {
+        display: block;
+        width: 100%;
+    }
+    tr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    th,
+    td {
+        display: block;
+        width: 100%;
+        flex-grow: 1;
+        box-sizing: border-box;
+        overflow: hidden;
+        padding: $cell-padding;
+        list-style: none;
+        border: 1px solid #eee;
+        label {
+            display: none;
+        }
+    }
+    td {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+th,
+td {
+    @include nable(12);
+}
+
+.fable {
+    display: block;
+    font-size: $font-size;
+    .thead,
+    .tbody,
+    .tfoot {
+        display: block;
+        width: 100%;
+    }
+    .tr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tbody .cell {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.cell {
+    display: block;
+    width: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: $cell-padding;
+    list-style: none;
+    border: solid 1px #eee;
+    .thead & {
+        font-weight: bold;
+    }
+    .cols-2 & {
+        width: 50%;
+    }
+    .cols-3 & {
+        width: 33.33%;
+    }
+    .cols-4 & {
+        width: 25%;
+    }
+    .cols-5 & {
+        width: 20%;
+    }
+    .cols-6 & {
+        width: 16.6%;
+    }
+    label {
+        display: none;
+    }
+    >h1,
+    >h2,
+    >h3,
+    >h4,
+    >h5,
+    >h6 {
+        margin: 0;
+    }
+}

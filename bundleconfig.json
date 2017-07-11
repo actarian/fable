@@ -1,0 +1,55 @@
+[{
+        "inputFiles": [
+            "bower_components/animate.css/animate.css",
+            "bower_components/json-formatter/dist/json-formatter.css"
+        ],
+        "outputFileName": "docs/css/vendors.css",
+        "minify": {
+            "enabled": true
+        }
+    },
+    {
+        "inputFiles": [
+            "docs/css/bootstrap.css"
+        ],
+        "outputFileName": "docs/css/bootstrap.css",
+        "minify": {
+            "enabled": true
+        }
+    },
+    {
+        "inputFiles": [
+            "docs/css/app.css"
+        ],
+        "outputFileName": "docs/css/app.css",
+        "minify": {
+            "enabled": true
+        }
+    },
+    {
+        "inputFiles": [
+            "bower_components/angular/angular.js",
+            "bower_components/angular-route/angular-route.js",
+            "bower_components/json-formatter/dist/json-formatter.js"
+        ],
+        "outputFileName": "docs/js/vendors.js",
+        "minify": {
+            "enabled": true
+        }
+    },
+    {
+        "inputFiles": [
+            "app/app.module.js",
+            "app/app.config.js",
+            "app/app.routes.js",
+            "app/framework/droppables/droppable.directive.js",
+            "app/framework/droppables/draggable.directive.js",
+            "app/framework/events/events.factory.js",
+            "app/controllers/controllers.js"
+        ],
+        "outputFileName": "docs/js/app.js",
+        "minify": {
+            "enabled": true
+        }
+    }
+]

@@ -1,0 +1,41 @@
+<header>
+    <header-items>
+        <li class="nav-item">Title</li>
+    </header-items>
+</header>
+
+<main>
+    <div class="container" unselectable>
+        <h3>Fable</h3>
+        <div class="fable cols-{{headers.length}}">
+            <div class="thead">
+                <div class="tr">
+                    <div class="cell" ng-repeat="col in headers track by $index" ng-bind="col.name"></div>
+                </div>
+            </div>
+            <div class="tbody">
+                <div class="tr" ng-repeat="row in items track by $index">
+                    <div class="cell" ng-repeat="col in headers track by $index" ng-bind="row[col.key]"></div>
+                </div>
+            </div>
+        </div>
+        <h3>Table</h3>
+        <table class="nable cols-{{headers.length}}">
+            <thead>
+                <tr>
+                    <th ng-repeat="col in headers track by $index" title="{{col.name}}" ng-bind="col.name"></th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="row in items track by $index" ng-model="row" droppable=".draggable" draggable=".draggable" droppable-index="$index" draggable-if="true" droppable-if="true">
+                <tr class="draggable">
+                    <td ng-repeat="col in headers track by $index"><label ng-bind="col.name"></label><span ng-bind="row[col.key]"></span></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="{{headers.length}}"></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</main>

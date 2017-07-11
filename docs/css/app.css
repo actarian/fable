@@ -1,0 +1,393 @@
+@charset "UTF-8";
+/*
+@function pow($number, $exp) {
+    $value: 1;
+
+    @if $exp > 0 {
+        @for $i from 1 through $exp {
+            $value: $value * $number;
+        }
+    }
+    @else if $exp < 0 {
+        @for $i from 1 through -$exp {
+            $value: $value / $number;
+        }
+    }
+
+    @return $value;
+}
+*/
+/*
+.btn-link {
+  font-weight: normal;
+  color: $link-color;
+  border-radius: 0;
+
+  &,
+  &:active,
+  &.active,
+  &:disabled {
+    background-color: transparent;
+    @include box-shadow(none);
+  }
+  &,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  @include hover {
+    border-color: transparent;
+  }
+  @include hover-focus {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+    background-color: transparent;
+  }
+  &:disabled {
+    @include hover-focus {
+      color: $btn-link-disabled-color;
+      text-decoration: none;
+    }
+  }
+}
+*/
+/*
+@mixin btn-color($color, $background, $border) {
+  $active-background: darken($background, 10%);
+  $active-border: darken($border, 12%);
+
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+  @include box-shadow($btn-box-shadow);
+
+  @include hover {
+    color: $color;
+    background-color: $active-background;
+        border-color: $active-border;
+  }
+
+  &:focus,
+  &.focus {
+    color: $color;
+    background-color: $active-background;
+        border-color: $active-border;
+  }
+
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: $active-background;
+        border-color: $active-border;
+    // Remove the gradient for the pressed/active state
+    background-image: none;
+    @include box-shadow($btn-active-box-shadow);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: darken($background, 17%);
+          border-color: darken($border, 25%);
+    }
+  }
+
+  &.disabled,
+  &:disabled {
+    &:focus,
+    &.focus {
+      background-color: $background;
+          border-color: $border;
+    }
+    @include hover {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+}
+*/
+/*
+@mixin btn-outline-color($color) {
+    color: $color;
+    background-image: none;
+    background-color: transparent;
+    border-color: $color;
+
+    @include hover {
+        color: #fff;
+        background-color: $color;
+        border-color: $color;
+    }
+
+    &:focus,
+    &.focus {
+        color: #fff;
+        background-color: $color;
+        border-color: $color;
+    }
+
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        color: #fff;
+        background-color: $color;
+        border-color: $color;
+
+        &:hover,
+        &:focus,
+        &.focus {
+            color: #fff;
+            background-color: darken($color, 17%);
+            border-color: darken($color, 25%);
+        }
+    }
+
+    &.disabled,
+    &:disabled {
+        &:focus,
+        &.focus {
+            border-color: lighten($color, 20%);
+        }
+
+        @include hover {
+            border-color: lighten($color, 20%);
+        }
+    }
+}
+*/
+/*
+@function pow($number, $exp) {
+    $value: 1;
+
+    @if $exp > 0 {
+        @for $i from 1 through $exp {
+            $value: $value * $number;
+        }
+    }
+    @else if $exp < 0 {
+        @for $i from 1 through -$exp {
+            $value: $value / $number;
+        }
+    }
+
+    @return $value;
+}
+*/
+/*
+Scrollbar
+--------------------
+        1
+────────┐
+        ┴   2
+        ┬   2
+        ║   3-4
+        ║   3-4
+        │   5-4
+        │   5-4
+────────┘   6-7
+        1
+--------------------
+*/
+.nable {
+  display: block;
+  font-size: 12px; }
+  .nable thead,
+  .nable tbody,
+  .nable tfoot,
+  .nable tr,
+  .nable th,
+  .nable td {
+    display: block;
+    width: 100%; }
+  .nable tr {
+    display: flex;
+    flex-wrap: wrap; }
+  .nable th,
+  .nable td {
+    display: block;
+    width: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 4px;
+    list-style: none;
+    border: 1px solid #eee; }
+    .nable th label,
+    .nable td label {
+      display: none; }
+  .nable td {
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+
+.cols-1 th, .cols-1
+td {
+  width: 100%; }
+
+.cols-2 th, .cols-2
+td {
+  width: 50%; }
+
+.cols-3 th, .cols-3
+td {
+  width: 33.33333%; }
+
+.cols-4 th, .cols-4
+td {
+  width: 25%; }
+
+.cols-5 th, .cols-5
+td {
+  width: 20%; }
+
+.cols-6 th, .cols-6
+td {
+  width: 16.66667%; }
+
+.cols-7 th, .cols-7
+td {
+  width: 14.28571%; }
+
+.cols-8 th, .cols-8
+td {
+  width: 12.5%; }
+
+.cols-9 th, .cols-9
+td {
+  width: 11.11111%; }
+
+.cols-10 th, .cols-10
+td {
+  width: 10%; }
+
+.cols-11 th, .cols-11
+td {
+  width: 9.09091%; }
+
+.cols-12 th, .cols-12
+td {
+  width: 8.33333%; }
+
+.fable {
+  display: block;
+  font-size: 12px; }
+  .fable .thead,
+  .fable .tbody,
+  .fable .tfoot {
+    display: block;
+    width: 100%; }
+  .fable .tr {
+    display: flex;
+    flex-wrap: wrap; }
+  .fable .tbody .cell {
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+
+.cell {
+  display: block;
+  width: 100%;
+  flex-grow: 1;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 4px;
+  list-style: none;
+  border: solid 1px #eee; }
+  .thead .cell {
+    font-weight: bold; }
+  .cols-2 .cell {
+    width: 50%; }
+  .cols-3 .cell {
+    width: 33.33%; }
+  .cols-4 .cell {
+    width: 25%; }
+  .cols-5 .cell {
+    width: 20%; }
+  .cols-6 .cell {
+    width: 16.6%; }
+  .cell label {
+    display: none; }
+  .cell > h1,
+  .cell > h2,
+  .cell > h3,
+  .cell > h4,
+  .cell > h5,
+  .cell > h6 {
+    margin: 0; }
+
+[unselectable] {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */ }
+
+[draggable] {
+  position: relative;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */ }
+  [draggable]:not([disabled]) {
+    cursor: move; }
+    [draggable]:not([disabled]) input,
+    [draggable]:not([disabled]) select {
+      cursor: pointer; }
+  [draggable].dragging {
+    z-index: 10000; }
+    [draggable].dragging > * {
+      pointer-events: none; }
+    [draggable].dragging td {
+      background: #fff; }
+
+.dragging .draggable {
+  z-index: 10000;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+  cursor: pointer; }
+
+[droppable] {
+  box-sizing: border-box;
+  position: relative; }
+  [droppable]:not([disabled]).over {
+    border-color: #fff; }
+  [droppable]:not([disabled]).dropping {
+    border-color: #fff; }
+
+/*
+th {
+    &[draggable] {
+        height: 44px;
+        &:not([disabled]) {
+            &:hover {
+                background-color: $background-over-color;
+            }
+            &.dragging {
+                background-color: $background-color;
+            }
+        }
+    }
+    &[droppable] {
+        &:not([disabled]) {
+            &.dropping {
+                background-color: $background-dropping-color;
+            }
+        }
+    }
+}
+*/
+body {
+  font-family: 'Poppins'; }

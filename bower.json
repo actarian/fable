@@ -1,0 +1,23 @@
+{
+    "name": "fable",
+    "description": "fable",
+    "main": "fable.js",
+    "license": "ISC",
+    "homepage": "https://actarian.github.io/fable/",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "v4.0.0-alpha.6",
+        "angular": "^1.6.5",
+        "angular-route": "^1.6.5",
+        "json-formatter": "^0.6.0",
+        "dynamics.js": "^1.1.1",
+        "animate.css": "^3.5.2"
+    }
+}
